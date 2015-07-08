@@ -8,7 +8,7 @@ development:
   host: 192.168.59.103
   port: 15432
 
-test:
+test: &test
   adapter: postgresql
   encoding: utf8
   database: sample_app_test
@@ -27,3 +27,6 @@ production:
   password: gSbjFpFLx9BzqGTuP2CfmgQ9yb
   host: ec2-54-225-130-164.compute-1.amazonaws.com
   port: 5432
+
+cucumber:
+  <<: *test

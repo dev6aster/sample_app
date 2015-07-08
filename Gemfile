@@ -21,6 +21,8 @@ group :test do
   gem 'capybara', '2.1.0'
   gem 'terminal-notifier-guard', '1.6.4'
   gem 'factory_girl_rails', '4.2.1'
+  gem 'cucumber-rails', '1.4.0', :require => false
+  gem 'database_cleaner', '>=0.7.2'
 end
 
 gem 'sass-rails', '4.0.5'
